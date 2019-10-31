@@ -20,7 +20,7 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: aWVafBlHL64ylXsc
 
   cmpaas-backend:
-    image: cmpaasufes/cmpaas-backend:1.0.2
+    image: cmpaasufes/cmpaas-backend:1.0.0
     restart: always
     links: 
       - "mongo:mongo"
@@ -34,7 +34,8 @@ services:
       URL_EMAIL: http://localhost/pages/newpassword/
     
   cmpaas-frontend:
-    image: lukasg18/cmpaas-frontend:1.0.6
+  
+    image: cmpaasufes/cmpaas-frontend:1.0.0
     restart: always
     ports:
       - "80:80"
