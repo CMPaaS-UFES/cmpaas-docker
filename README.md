@@ -1,7 +1,8 @@
 # Docker compose
 
 ## Execução do projeto
-> É requisito de execução do projeto saber [Docker](https://docs.docker.com/)
+> É requisito para execução do projeto saber [Docker](https://docs.docker.com/)
+
 A execução do projeto é feita usando o comando:
 ```shell
 $ docker-compose up
