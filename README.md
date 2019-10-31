@@ -1,7 +1,7 @@
 # Docker compose
 
 ## Execução do projeto
-
+> É requisito de execução do projeto saber [Docker](https://docs.docker.com/)
 A execução do projeto é feita usando o comando:
 ```shell
 $ docker-compose up
@@ -22,6 +22,8 @@ Visualizador do banco de dados basta acessar http://localhost:8081, é opcional 
 ### cmpaas-backend
 Api REST para salvar os dados do usuário e mapas conceituais.
 
+A imagem está hospedada no dockerhub neste [link](https://hub.docker.com/r/cmpaasufes/cmpaas-backend)
+
 Para acessar a documentação com as rotas da api assece: http://localhost:3000/docs 
 
 As variaveis `EMAIL` e `PASSWORD` são configuradas no sistema com um e-mail do projeto, usado para enviar e-mail de recuperação de senha e confirmação de e-mail.
@@ -29,3 +31,5 @@ As variaveis `EMAIL` e `PASSWORD` são configuradas no sistema com um e-mail do 
 ### cmpaas-frontend
 Front End feito em AngularJS.
 o Front End é exposto na porta 80, porém pode-se editar o arquivo `docker-compose.yml` caso tenha algum conflito de porta.
+
+A imagem está hospedada no dockerhub neste [link](https://hub.docker.com/r/cmpaasufes/cmpaas-frontend)
